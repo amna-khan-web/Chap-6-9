@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment # 6 || Q # 3;</title>
+
+<style>
+    body{
+            display: grid;
+            height: 100vh; 
+            margin: 0; 
+            place-items: center;
+            background-image: url("assest/shadow.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+    }
+   .box{
+    border: 3px solid rgb(36, 3, 63);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+
+   }
+   #user{
+    margin-top: 20px;
+    padding: 5px;
+    border: 2px teal;
+    text-align: center;
+    outline-color: rgb(97, 32, 182);
+   }
+   .box button{
+    padding: 3px 19px;
+    border: none;
+    background-color: rgb(58, 3, 58);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+   }
+   .box button:hover{
+    background-color: rgb(2, 2, 88);
+   }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <input type="text" id="user" placeholder="Enter your name">
+    <br><br>
+    <button onclick="greetUser()">Enter</button>
+    
+</div>
+<script> 
+    
+    function greetUser() {
+        var name = document.getElementById("user").value;
+        if(name === ""){
+            alert("Enter Your Name...!")
+        }else{
+            alert("HELLO!" + " " + name + "!");
+            window.open("fourth_Q.html", "_self");
+        }
+}
+</script>
+
+      
+</body>
+</html>

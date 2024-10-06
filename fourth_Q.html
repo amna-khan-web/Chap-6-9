@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment # 6 || Q # 4;</title>
+<!-- for styleing the box -->
+  <style>
+    body {
+      display: grid;
+      height: 100vh;
+      margin: 0;
+      place-items: center;
+      background-color: rgb(205, 194, 216);
+    }
+
+    .border {
+      border: 3px solid rgb(36, 3, 63);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    .border label {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    #numInput {
+      margin-top: 10px;
+      padding: 5px 34px;
+      border: 2px teal;
+      text-align: center;
+      outline-color: rgb(97, 32, 182);
+    }
+
+    .border button {
+      padding: 7px 19px;
+      border: none;
+      background-color: rgb(58, 3, 58);
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    .border button:hover {
+      background-color: rgb(2, 2, 88);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HTML UI Section -->
+  <div class="border">
+    <h1 style="color: rgb(87, 4, 87);">Multiplication Table</h1>
+    <label for="numInput">Enter a number:</label>
+    <br>
+    <input type="number" id="numInput" placeholder="Enter a number">
+    <br><br>
+    <button onclick="displayTable()">Generate Table</button>
+
+    <h2>Table:</h2>
+    <div id="Multiplication"></div>
+  </div>
+
+  <a href="fifth_Q.html">Click for the Next Question!</a>
+
+  <!-- JS section Start -->
+  <script>
+    function displayTable() {
+      let number = document.getElementById('numInput').value;
+      if (number === "") {
+        number = 5;
+      }
+      number = parseInt(number);
+      let tableDiv = document.getElementById('Multiplication');
+      tableDiv.innerHTML = "";
+
+      for (let i = 1; i <= 10; i++) {
+        let result = number * i;
+        tableDiv.innerHTML += `${number} x ${i} = ${result}<br>`;
+      }
+
+    }
+  </script>
+</body>
+
+</html>

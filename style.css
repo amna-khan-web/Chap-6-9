@@ -1,0 +1,71 @@
+.body{
+    background-image: url("assest/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.enter{
+    text-align: center;
+    margin-top: 100px;
+    text-decoration-line: underline;
+    color: rgb(1, 1, 37);
+    line-height: 60px;
+}
+.enter p{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 20px;
+}
+.enter button{
+    background-color: rgb(1, 1, 41);
+    text-decoration: none;
+    color: white;
+    outline: none;
+    padding: 20px 60px;
+    border: none;
+    font-weight: bold;
+}
+.enter a button{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+.enter button:hover{
+    background-color: rgb(70, 3, 8);
+    border-radius: 40px;
+}
+
+/* --------------Question # 5 CSS---------------------- */
+.fifth{
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    place-items: center;
+    background-color: rgb(168, 230, 241);
+  }
+#marksheetForm{
+    text-align: center;
+    border: 3px solid teal;
+    padding: 30px;
+}
+#subject2{
+    margin-left: 16px;
+}
+#subject3{
+    margin-left: 14px;
+}
+#marksheetForm button{
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(2, 68, 68);
+    border-radius: 20px;
+    color: white;   
+}
+#marksheetForm button:hover{
+    background-color: rgb(5, 150, 150);
+    color: rgb(2, 16, 75);
+    font-weight: bold;
+}
